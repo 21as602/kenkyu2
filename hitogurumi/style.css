@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  #wrap {
+    width: 100%;
+    margin: auto;
+  }
+header {
+  background: #f5f5dc;
+  color: #fa8072;
+  padding: 20px;
+  font-family:  'Zen Maru Gothic', sans-serif;
+}
+
+.main-menu {
+  background: #f5f5dc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.main-menu ul {
+    display: flex;
+  }
+  .main-menu ul li a {
+    color: #fa8072;
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    transition-property: color;
+  transition-duration: .5s;
+}
+.main-menu ul li a :hover{
+    color: #FFFFF0;
+}
+
+  
+  
+  main {
+    display: flex;
+    color:#FFFFF0;
+    ;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  }
+
+  figure {
+    width: auto
+  }
+  .pic1 img {
+    border-radius: 20px;
+  }
+  
+  
+  
+section {
+  background: #FFFFF0;
+  ;
+  flex: 3;
+  padding: 20px;
+}
+article {
+  background: #FFFFF0;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #898880;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}  
+  main p {
+  background: #FFFFF0;
+  padding: 20px;
+  color: #898880;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+aside {
+  background: #FFFFF0;
+  flex: 1;
+}
+
+.sub-menu {
+  background:#FFFFF0;
+  ;
+}
+.sub-menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 10px 20px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  .sub-menu ul li a:hover {
+    background: #666;
+  }
+footer {
+  background: #FFFFF0;
+  color: #898880;
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+article img {
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+a{
+  color:inherit;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fa8072;
+}
+
+a:visited {
+  color: #fa8072;
+ }
+
+ a.pagetop {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 12px;
+  border-radius: 25px;
+  background-color: #fa8072;
+  color: #FDF5E6;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*タブレット用*/
+@media all and (max-width: 1024px) {
+}
+/*スマホ用*/
+@media all and (max-width: 599px) {
+  .main-menu ul {
+    display: block;
+  }
+
+  .main-menu ul li {
+    text-align: center;
+  }
+
+  main {
+    display: block;
+    flex-direction: unset;
+  }
+
+  .sub-menu ul li {
+    text-align: center;
+  }
+}
